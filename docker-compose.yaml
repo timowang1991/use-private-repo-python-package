@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  use-private-repo-python-package:
+    container_name: use-private-repo-python-package
+    image: python:3.8-alpine3.15
+    env_file: .env
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk add git
+        pip install pipenv
+        pipenv install
+        pipenv run start

@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "6e1d80aa91af27ef642dab29b762437be30e995571b6ce1495e5e1d72b3d4091"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.8"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "my-private-module-package": {
+            "git": "https://${GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/timowang1991/private-repo-python-package.git",
+            "ref": "ae626e4ead3c90911b6ffe9d92991e03689a6190"
+        }
+    },
+    "develop": {}
+}

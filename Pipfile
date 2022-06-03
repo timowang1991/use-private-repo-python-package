@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+my-private-module-package = {git = "https://${GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/timowang1991/private-repo-python-package.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+start = "python demo.py"
