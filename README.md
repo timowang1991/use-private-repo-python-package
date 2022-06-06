@@ -54,3 +54,4 @@ docker-compose up
 
 # References
 * [Installing Private Python Packages](https://docs.readthedocs.io/en/stable/guides/private-python-packages.html)
+* [Support for Environment Variables](https://pipenv-fork.readthedocs.io/en/latest/advanced.html#support-for-environment-variables)
